@@ -5,9 +5,9 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Carregar os dados dos arquivos Excel
-rendimento_long = pd.read_excel('C:/Users/jacim/Downloads/rendimento_long.xlsx', sheet_name=None)
-rendimento_short = pd.read_excel('C:/Users/jacim/Downloads/rendimento_short.xlsx', sheet_name=None)
-tabela = pd.read_csv('C:/Users/jacim/Downloads/tabela.csv')
+rendimento_long = pd.read_excel('rendimento_long.xlsx', sheet_name=None)
+rendimento_short = pd.read_excel('rendimento_short.xlsx', sheet_name=None)
+tabela = pd.read_csv('tabela.csv')
 
 # Extrair os DataFrames para cada cultura
 soja_long = rendimento_long['soja_long']
