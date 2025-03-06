@@ -5,10 +5,10 @@ import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
 
 # Lendo o arquivo com a tabela já pronta
-tabela = pd.read_csv('C:/Users/jacim/Downloads/tabela.csv').iloc[:, 1:]
+tabela = pd.read_csv('tabela.csv').iloc[:, 1:]
 
 # Lendo os arquivos das tabelas de longo e curto prazo para o método do cotovelo
-tabela_long = pd.read_csv('C:/Users/jacim/Downloads/tabela-long.csv')
+tabela_long = pd.read_csv('tabela-long.csv')
 tabela_long = tabela_long.drop(columns=tabela_long.columns[0])  # Remover a primeira coluna (se necessário)
 
 # Verificando os nomes das colunas de tabela_long
@@ -18,7 +18,7 @@ print(tabela_long.columns)  # Verifique se 'MP_Long' está presente aqui
 # Ajuste conforme a saída do print(tabela_long.columns)
 tabela_long = tabela_long.rename(columns={'MP_Long': 'MP_Long'})  # Renomeie se necessário
 
-tabela_short = pd.read_csv('C:/Users/jacim/Downloads/tabela-short.csv')
+tabela_short = pd.read_csv('tabela-short.csv')
 tabela_short = tabela_short.drop(columns=tabela_short.columns[0])  # Remover a primeira coluna (se necessário)
 
 
